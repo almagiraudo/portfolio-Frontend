@@ -1,6 +1,10 @@
 div{
-   background-color: #721754; 
-   opacity: 95%;
+    background: rgb(18,1,46);
+    background: linear-gradient(90deg,
+     rgba(18,1,46,1) 27%,
+      rgba(2,0,36,1) 30%,
+       rgba(121,9,113,1) 41%,
+        rgba(231,231,231,1) 100%);
 }
 app-social{
     float:right;

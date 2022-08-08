@@ -13,7 +13,12 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardandsoftskillsComponent } from './components/hardandsoftskills/hardandsoftskills.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
- 
+import { InicioSesionComponent } from './components/inicio-sesion/inicio-sesion.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, ROUTES, Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -27,11 +32,22 @@ import { FooterComponent } from './components/footer/footer.component';
     EducacionComponent,
     HardandsoftskillsComponent,
     ProyectoComponent,
-    FooterComponent
+    FooterComponent,
+    InicioSesionComponent,
+    HomeComponent
+    
+    
   ],
+   
   imports: [
     BrowserModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    RouterModule,
+    ReactiveFormsModule,
+    HttpClientModule
+
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
