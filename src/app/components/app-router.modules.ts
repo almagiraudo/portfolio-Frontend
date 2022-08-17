@@ -5,7 +5,7 @@ import { InicioSesionComponent } from "./inicio-sesion/inicio-sesion.component";
 
 
 const  routes: Routes=[
-    {path:'', redirectTo:'inicio-sesion', pathMatch:'full'},
+    {path:'', redirectTo:'home', pathMatch:'full'},
     {path:'home', component:HomeComponent},
     {path:'inicio-sesion',component:InicioSesionComponent}
 ];

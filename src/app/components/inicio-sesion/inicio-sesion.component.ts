@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,15 +9,11 @@ import { Router } from '@angular/router';
 })
 export class InicioSesionComponent implements OnInit {
  
-  constructor(private router:Router) {
+  constructor() {
   
    }
 
   ngOnInit(): void {
-  }
-
-  login(){
-    this.router.navigate(['/login'])
   }
 
 }
