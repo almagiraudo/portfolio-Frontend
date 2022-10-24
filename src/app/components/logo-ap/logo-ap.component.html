@@ -8,7 +8,8 @@
                 <a href="https://www.linkedin.com/in/almagiraudo/" target="_blank"><img src="../../../assets/logo_linkedin.png" id=""></a>
                 <a href="https://github.com/almagiraudo" target="_blank"><img src="../../../assets/logo_github.png" id=""></a>
                 <a href="https://www.facebook.com/alma.giraudo.92/" target="_blank"><img src="../../../assets/logo_facebook.png" id=""></a>
-                <button type="button" class="btn btn-outline-dark" (click)="login()">Login</button>
+                <button type="button" class="btn btn-outline-dark" (click)="login()"*ngIf="!isLogged">Login</button>
+                <button type="button" class="btn btn-outline-dark" (click)="onLogOut()"*ngIf="isLogged">Logout</button>
         </div>
     </div>
 

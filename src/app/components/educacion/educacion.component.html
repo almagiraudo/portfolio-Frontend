@@ -1,32 +1,29 @@
 <div class="row">
-    <h1>
-        Educación
-    </h1>
-    <div class="col-lg-11"></div>
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h1>Instituto San José </h1>-
-                <h2><i>Primario</i></h2>
-                <h6><i>2004-2011</i></h6>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <h1>Instituto San Agustín </h1>-
-                <h2><i>Secundario</i></h2>
-                <h6><i>2012-2017</i></h6>
-            </li>
-            <p>Colegio secundario orientado a Humanidaes, Economía y Administracíon</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Instituto Connexions</h1>-
-                <h2><i>Academia de Inglés</i></h2>
-                <h6><i>2012-2017 (entrecortado)</i></h6>
-            </li>
-            <p>Academia de inlgés en la que estudie aproximadamente durante 4 años.</p>
-        </ul>
+    <h1>Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Nueva Educacion
+        </button>
     </div>
 
-</div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2> {{Educacion.nombreE}} </h2>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i>EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" (click)="delete(Educacion.id)">
+                            <i class="bi bi-x"></i> BORRAR </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

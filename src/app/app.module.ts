@@ -13,11 +13,16 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardandsoftskillsComponent } from './components/hardandsoftskills/hardandsoftskills.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule} from './components/app-router.modules';
 import { HomeComponent } from './components/home/home.component';
-import { InicioSesionComponent } from './components/inicio-sesion/inicio-sesion.component';
+import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule} from '@angular/common/http';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
 
 
 @NgModule({
@@ -33,8 +38,12 @@ import { HttpClientModule} from '@angular/common/http';
     HardandsoftskillsComponent,
     ProyectoComponent,
     FooterComponent,
-    InicioSesionComponent,
-    HomeComponent
+    LoginComponent,
+    HomeComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NewEducacionComponent,
+    EditEducacionComponent
     
     
   ],
@@ -44,10 +53,13 @@ import { HttpClientModule} from '@angular/common/http';
     NgCircleProgressModule.forRoot({}),
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
