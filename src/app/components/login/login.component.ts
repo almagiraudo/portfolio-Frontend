@@ -14,11 +14,11 @@ import { TokenService } from 'src/app/service/token.service';
 export class LoginComponent implements OnInit {
  isLogged=false;
  isLogginFail=false;
- loginUsuario!:LoginUsuario; 
- nombreUsuario!: String ;
- password!: String;
- roles:String[]=[];
- errMsj!:String;
+ loginUsuario:LoginUsuario; 
+ nombreUsuario: string ;
+ password: string;
+ roles:string[]=[];
+ errMsj:string;
 
 
   constructor(private tokenService:TokenService,
@@ -35,7 +35,8 @@ export class LoginComponent implements OnInit {
   onLogin():void{
     this.loginUsuario = new LoginUsuario(this.nombreUsuario,
        this.password);
-        this.authService.login(this.loginUsuario).subscribe(data=>{
+        this.authService.login(this.loginUsuario).subscribe(
+          data=>{
           this.isLogged = true;
           this.isLogginFail = false;
           this.tokenService.setToken(data.token);

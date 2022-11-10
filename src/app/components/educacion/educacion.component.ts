@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/service/educacion.service';
 import { TokenService } from 'src/app/service/token.service';
@@ -10,10 +11,12 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class EducacionComponent implements OnInit {
   educacion : Educacion[] = [];
-
-  constructor(private educacionS: EducacionService, private  tokenService : TokenService) { }
-
+  roles : string[];
+  isAdmin = false;
   isLogged = false;
+  constructor(private educacionS: EducacionService,
+     private  tokenService : TokenService,
+     private router: Router) { }
 
   ngOnInit(): void {
     this.cargarEducacion();

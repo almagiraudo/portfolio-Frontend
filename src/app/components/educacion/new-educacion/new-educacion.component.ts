@@ -10,8 +10,8 @@ import { EducacionService } from 'src/app/service/educacion.service';
 })
 export class NewEducacionComponent implements OnInit {
   
-  nombreE:string;
-  descripcionE:string;
+  nombreE:string ='';
+  descripcionE:string='';
   constructor(private seducacion: EducacionService, private router: Router) { }
 
   ngOnInit(): void {

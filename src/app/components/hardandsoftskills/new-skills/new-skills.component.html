@@ -1,0 +1,25 @@
+<section class="vh-100 newskills-custom">
+<div class="container">
+    <div class="row">
+        <div class="formulario">         
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nueva Skill</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre"[(ngModel)]="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentaje">Porcentaje</label>
+                    <input type="number" class="form-control" id="porcentaje" name="porcentaje"[(ngModel)]="porcentaje" required>
+                </div>
+                <div class="form-group">
+                    <label for="img">Imagen</label>
+                    <input  type="file" alife-file-to-base64 (onFileChanged)="obtener($event)" class="form-control" id="img" name="img"[(ngModel)]="img" >
+                </div>
+                <button class="btn btn-dark">
+                   Agregar Skill    
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>

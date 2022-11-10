@@ -3,5 +3,5 @@ export class NuevoUsuario {
     nombreUsuario!: String;
     email!: String;
     password!: String;
-    authorities!: String[]
+    authorities: String[]
 }

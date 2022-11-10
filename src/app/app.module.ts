@@ -23,6 +23,15 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
+import { EditSkillsComponent } from './components/hardandsoftskills/edit-skills/edit-skills.component';
+import { NewSkillsComponent } from './components/hardandsoftskills/new-skills/new-skills.component';
+import { AlifeFileToBase64Module } from 'alife-file-to-base64';
+import { NewProyectComponent } from './components/proyecto/new-proyect/new-proyect.component';
+import { EditProyectComponent } from './components/proyecto/edit-proyect/edit-proyect.component';
+import { EditpersonaComponent } from './components/about/editpersona/editpersona.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 @NgModule({
@@ -43,7 +52,12 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion/ed
     NewExperienciaComponent,
     EditExperienciaComponent,
     NewEducacionComponent,
-    EditEducacionComponent
+    EditEducacionComponent,
+    EditSkillsComponent,
+    NewSkillsComponent,
+    NewProyectComponent,
+    EditProyectComponent,
+    EditpersonaComponent
     
     
   ],
@@ -54,7 +68,9 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion/ed
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AlifeFileToBase64Module,
+    
 
   ],
   providers: [
