@@ -29,9 +29,6 @@ import { AlifeFileToBase64Module } from 'alife-file-to-base64';
 import { NewProyectComponent } from './components/proyecto/new-proyect/new-proyect.component';
 import { EditProyectComponent } from './components/proyecto/edit-proyect/edit-proyect.component';
 
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 @NgModule({

@@ -10,24 +10,15 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class AboutComponent implements OnInit {
   persona: Persona = new Persona("","","","");
-
-  constructor(public personaService:PersonaService,
-    private tokenService:TokenService) { }
+  personas: Persona[]=[];
+  constructor(public personaService:PersonaService) { }
 
   isLogged=false;
 
   ngOnInit(): void {
-  this.cargar();
-  if(this.tokenService.getToken()){
-    this.isLogged = true;
-  } else{
-    this.isLogged = false;
-  }
+    this.personaService.list().subscribe(data => {this.personas = data})
   }
 
-  cargar(){
-    this.personaService.detail(1).subscribe(data =>
-      {this.persona = data});
-  }
+  
 
 }
