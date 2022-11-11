@@ -8,7 +8,7 @@ import { EditSkillsComponent } from "./hardandsoftskills/edit-skills/edit-skills
 import { NewSkillsComponent } from "./hardandsoftskills/new-skills/new-skills.component";
 import { HomeComponent } from "./home/home.component";
 import { LoginComponent } from "./login/login.component";
-import { EditpersonaComponent } from "./about/editpersona/editpersona.component";
+
 
 
 
@@ -22,7 +22,7 @@ const  routes: Routes=[
     {path:'editedu/:id',component: EditEducacionComponent},
     {path:'nuevaskill', component: NewSkillsComponent},
     {path:'editarskill/:id',component: EditSkillsComponent},
-    {path:'editarpersona/:id',component:EditpersonaComponent}
+    
     
 ];
 

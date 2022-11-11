@@ -28,7 +28,7 @@ import { NewSkillsComponent } from './components/hardandsoftskills/new-skills/ne
 import { AlifeFileToBase64Module } from 'alife-file-to-base64';
 import { NewProyectComponent } from './components/proyecto/new-proyect/new-proyect.component';
 import { EditProyectComponent } from './components/proyecto/edit-proyect/edit-proyect.component';
-import { EditpersonaComponent } from './components/about/editpersona/editpersona.component';
+
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
@@ -56,8 +56,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditSkillsComponent,
     NewSkillsComponent,
     NewProyectComponent,
-    EditProyectComponent,
-    EditpersonaComponent
+    EditProyectComponent
+    
     
     
   ],
@@ -70,7 +70,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     HttpClientModule,
     FormsModule,
     AlifeFileToBase64Module,
-    
+   
 
   ],
   providers: [
