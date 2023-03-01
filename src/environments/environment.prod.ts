@@ -1,5 +1,5 @@
 export const environment = {
  
   production: false,
- URL:'https://portfoliobackendag.herokuapp.com/'
+ URL:'https://almagiraudo-portfolio-web-bknd.netlify.app'
 };

@@ -10,7 +10,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
- authURL= environment.URL+'auth/'
+ authURL= 'https://almagiraudo-portfolio-web-bknd.netlify.app'
+ URL= environment.URL+'auth/'
 
   constructor(private httpClient: HttpClient) { }
 

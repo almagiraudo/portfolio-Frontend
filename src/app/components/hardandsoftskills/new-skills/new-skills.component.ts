@@ -10,8 +10,9 @@ import { SkillsService } from 'src/app/service/skills.service';
 })
 export class NewSkillsComponent implements OnInit {
   nombre:string = '';
-  porcentaje: number=0;
+  porcentaje: number = 0;
   img: string = '';
+  
   constructor(private skillsS: SkillsService,
     private router: Router) { }
 

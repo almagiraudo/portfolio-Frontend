@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: false,\n  URL: 'https://almagiraudo-portfolio-web-bknd.netlify.app'\n};","map":null,"metadata":{},"sourceType":"module"}
