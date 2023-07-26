@@ -9,8 +9,6 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HardandsoftskillsComponent } from './components/hardandsoftskills/hardandsoftskills.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,10 +20,6 @@ import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
-import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
-import { EditSkillsComponent } from './components/hardandsoftskills/edit-skills/edit-skills.component';
-import { NewSkillsComponent } from './components/hardandsoftskills/new-skills/new-skills.component';
-import { AlifeFileToBase64Module } from 'alife-file-to-base64';
 import { NewProyectComponent } from './components/proyecto/new-proyect/new-proyect.component';
 import { EditProyectComponent } from './components/proyecto/edit-proyect/edit-proyect.component';
 
@@ -41,7 +35,6 @@ import { EditProyectComponent } from './components/proyecto/edit-proyect/edit-pr
     AboutComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HardandsoftskillsComponent,
     ProyectoComponent,
     FooterComponent,
     LoginComponent,
@@ -49,9 +42,6 @@ import { EditProyectComponent } from './components/proyecto/edit-proyect/edit-pr
     NewExperienciaComponent,
     EditExperienciaComponent,
     NewEducacionComponent,
-    EditEducacionComponent,
-    EditSkillsComponent,
-    NewSkillsComponent,
     NewProyectComponent,
     EditProyectComponent
     
@@ -61,13 +51,11 @@ import { EditProyectComponent } from './components/proyecto/edit-proyect/edit-pr
    
   imports: [
     BrowserModule,
-    NgCircleProgressModule.forRoot({}),
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    AlifeFileToBase64Module,
-   
+    
 
   ],
   providers: [

@@ -1,0 +1,1 @@
+{"version":3,"file":"persona.model.js","sourceRoot":"","sources":["../../../../src/app/model/persona.model.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,OAAO;IAOhB,YAAY,MAAa,EAAE,QAAe,EAAE,GAAU,EAAE,WAAkB;QACtE,IAAI,CAAC,MAAM,GAAG,MAAM,CAAC;QACrB,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;QACzB,IAAI,CAAC,WAAW,GAAG,WAAW,CAAC;QAC/B,IAAI,CAAC,GAAG,GAAG,GAAG,CAAC;IACnB,CAAC;CACJ"}

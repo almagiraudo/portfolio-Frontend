@@ -1,0 +1,21 @@
+import { TestBed } from '@angular/core/testing';
+import { NewProyectComponent } from './new-proyect.component';
+describe('NewProyectComponent', () => {
+    let component;
+    let fixture;
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            declarations: [NewProyectComponent]
+        })
+            .compileComponents();
+    });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(NewProyectComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
+});
+//# sourceMappingURL=new-proyect.component.spec.js.map

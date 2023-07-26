@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "portfolio-Frontend"
+  "defaultProject": "portfolio-Frontend",
+  "cli": {
+    "analytics": false
+  }
 }
